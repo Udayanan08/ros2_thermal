@@ -37,6 +37,7 @@ endif()
 
 add_executable(ros2_thermal src/ros2_thermal.cpp)
 add_executable(ros2_stereo src/ros2_stereo.cpp)
+add_executable(ros2_stereo src/ros2_kitti_gray.cpp)
 ament_target_dependencies(ros2_thermal rclcpp std_msgs sensor_msgs cv_bridge image_transport OpenCV)
 ament_target_dependencies(ros2_stereo rclcpp std_msgs sensor_msgs cv_bridge image_transport OpenCV)
 install(TARGETS
